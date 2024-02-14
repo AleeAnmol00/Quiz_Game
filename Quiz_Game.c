@@ -57,7 +57,7 @@ int main()
     printf("Congratulations! you've successfully passed the quiz.Excellent job!");
   }
   else{
-    printf("Thank you for attempting the quiz.While you didn't score as high as you might have hoped, remember that every attempt is an oppurtunity to learn and improve.Better luck next time");
+    printf("thanks for attempting the quiz.While you didn't score as high as you might have hoped, remember that every attempt is an oppurtunity to learn and improve.Better luck next time");
   }
     return 0;
 }
