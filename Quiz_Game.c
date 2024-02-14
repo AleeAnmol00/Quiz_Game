@@ -54,7 +54,7 @@ int main()
     printf("You have scored %d points\n", i);
   }
   if(i>=60){
-    printf("Congratulations! you've successfully passed the quiz.Excellent job!");
+    printf("Congratulations! you've successfully passed the quiz.");
   }
   else{
     printf("Thank you for attempting the quiz.Better luck next time");
