@@ -7,7 +7,7 @@ int main()
   char ans1[] = "Canberra";
   char userans1[100];
   printf("1)What is the capital of Australia?\n");
-  printf("Enter your answer: ");
+  printf("Enter your Answer: ");
   scanf("%s", &userans1);
 
   if(strcmp(userans1, ans1)== 0)
