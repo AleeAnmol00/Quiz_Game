@@ -1,59 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
+int main(){
+  int score = 0;
+  char questions[3][100] = {"1)What is the capital of Australia?\n",
+                            "2)What is 2 + 2?\n",
+                            "3)What is the capital of Pakistan?\n"};
+   char answers[3][100] = {"Canberra",
+                           "4",
+                           "Islamabad"};
+  char useranswer[3][100];
+  for (int i =0; i<3; i++){
 
-int main()
-{
-  int i = 0;
-  char ans1[] = "Canberra";
-  char userans1[100];
-  printf("1)What is the capital of Australia?\n");
-  printf("Enter your answer: ");
-  scanf("%s", &userans1);
-
-  if(strcmp(userans1, ans1)== 0)
-  {
+    printf(questions[i]);
+    printf("Enter your Answer: \n");
+    scanf("%s", &useranswer[i]);
+  if(strcmp(useranswer[i], answers[i])== 0){
       printf("Correct Answer\n");
-      i =i+30;
-      printf("You have scored %d points\n", i);
-  }
-  else{
+      score =score+30;
+      printf("You have scored %d points\n", score);
+  }else{
     printf("Wrong Answer\n");
-    printf("You have scored %d points\n", i);
+    printf("You have scored %d points\n", score);  }
   }
-
-  char ans2[] = "4";
-  char userans2[100];
-  printf("2)What is 2 +2 ?\n");
-  printf("Enter your answer: ");
-  scanf("%s", &userans2);
-
-  if(strcmp(userans2, ans2)== 0)
-  {
-      printf("Correct Answer\n");
-      i =i+30;
-      printf("You have scored %d points\n", i);
-  }
-  else{
-    printf("Wrong Answer\n");
-    printf("You have scored %d points\n", i);
-  }
-  char ans3[] = "Islamabad";
-  char userans3[100];
-  printf("3)What is the capital of pakistan?\n");
-  printf("Enter your answer: ");
-  scanf("%s", &userans3);
-
-  if(strcmp(userans3, ans3)== 0)
-  {
-      printf("Correct Answer\n");
-      i =i+30;
-      printf("you have scored %d points\n", i);
-  }
-  else{
-    printf("Wrong Answer\n");
-    printf("You have scored %d points\n", i);
-  }
-  if(i>=60){
+   if(score>=60){
     printf("Congratulations! you've successfully passed the quiz.Excellent job!");
   }
   else{
