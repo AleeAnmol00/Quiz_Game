@@ -7,7 +7,7 @@ int main()
   char ans1[] = "Canberra";
   char userans1[100];
   printf("1)What is the capital of Australia?\n");
-  printf("Enter your answer: ");
+  printf("Enter your Answer: ");
   scanf("%s", &userans1);
 
   if(strcmp(userans1, ans1)== 0)
@@ -57,7 +57,7 @@ int main()
     printf("Congratulations! you've successfully passed the quiz.");
   }
   else{
-    printf("Thank you for attempting the quiz.Better luck next time");
+    printf("thanks for attempting the quiz.While you didn't score as high as you might have hoped, remember that every attempt is an oppurtunity to learn and improve.Better luck next time");
   }
     return 0;
 }
