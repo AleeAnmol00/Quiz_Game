@@ -22,8 +22,10 @@ int score=0;
    char answers[3][100]= {"Canberra",
                           "4",
                          "Islamabad"};
+                         int numQuestions= sizeof(questions)/
+                         sizeof(questions[3]);
    char useranswer[3][100];
-   for (int i= 0; i<3; i++){
+   for (int i= 0; i<numQuestions; i++){
    score=Solve(questions[i], answers[i], score);
    }
        if(score>=60){
